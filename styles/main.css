@@ -1,8 +1,15 @@
 /* RULES */
 @charset "UTF-8";
 @font-face {
-    font-family: 'Annyant';
-    src: url(../fonts/AnnyantRoman.ttf) format('truetype');
+    font-family: 'Planet';
+    src: url(../fonts/Planet\ Comic.ttf) format('truetype');
+}
+
+:root {
+    --cor-fundo: #181818;
+    --cor1: #E00712;
+    --cor2: #F40612;
+    --fonte-logo: 'Planet';
 }
 
 /* TAGS */
@@ -14,7 +21,7 @@ body{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    background-color: black;
+    background-color: var(--cor-fundo);
     height: 100%;
     width: 100%;
 }
@@ -54,8 +61,8 @@ video {
 }
 .menu-bar {
     text-align: left;
-    padding: 5px;
-    background-image: linear-gradient(to bottom, #e50914, black 90%);
+    padding: 16px;
+    background-color: black;
 }
 .logo {
     width: 300px;
@@ -103,11 +110,10 @@ video {
 
 /* IDs */
 #logo {
-    color: white;
-    background-color: transparent;
-    font-family: 'Annyant';
-    font-weight: 100;
-    text-shadow: 2px 2px 3px #040404;
+    color: var(--cor1);
+    font-family: var(--fonte-logo);
+    font-size: 2em;
+    font-weight: normal;
 }
 #search-bar {
     padding: 5px;
