@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/icones/icon-48.ico" type="image/x-icon">
-    <link href="estilos/principal.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/icons/icon-48.ico" type="image/x-icon">
+    <link href="styles/main.css" rel="stylesheet" />
     <title>AniGO!</title>
 </head>
 <body>
     <div class="menu-bar">
-        <a href="index.html" target="_self" rel="internal"><img class="logo" src="imagens/logos/logo-200.png" width="100" alt="Logo AniGO!"></a>
-        <p>LANÇAMENTOS</p>
-        <p>GÊNERO</p>
+        <div class="logo">
+            <a href="index.html" target="_self" rel="internal">
+                <h1 id="logo">AniGO!</h1>
+                <img width="100" src="images/ani-right.png" alt="ani image">
+            </a>
+        </div>
+        <div class="menu-options">
+            <p>LANÇAMENTOS</p>
+            <p>GÊNERO</p>
+            <p>SOBRE</p>
+            <input type="text" name="sarch" id="search-bar">
+            <img src="images/search.png" alt="search" id="search-icon">
+        </div>
     </div>
     <h1>Veja os melhores animes aqui!</h1>
-    <div class="card">
-        <a href="animes/mashle.html" target="_self" rel="external">
-            <p class="card-name"><strong>MASHLE</strong></p>
-            <img class="thumb" src="https://animefire.net/img/animes/mashle.jpg?v=1" alt="Imagem" height="300">
+    <div>
+        <a class="card" href="animes/mashle.html" target="_self" rel="external">
+            <h3 class="card-name"><strong>MASHLE</strong></h3>
+            <img src="https://animefire.net/img/animes/mashle.jpg?v=1" alt="Imagem" height="300">
         </a>
-    </div>
-    <div class="card">
-        <a href="animes/blue-lock.html" target="_self" rel="external">
-            <p class="card-name"><strong>BLUE LOCK</strong></p>
-            <img class="thumb" src="https://animefire.net/img/animes/blue-lock-large.webp?v=1" alt="Imagem" height="300">
+        <a class="card" href="animes/blue-lock.html" target="_self" rel="external">
+            <h3 class="card-name"><strong>BLUE LOCK</strong></h3>
+            <img src="https://animefire.net/img/animes/blue-lock-large.webp?v=1" alt="Imagem" height="300">
         </a>
-    </div>
-    <div class="card">
-        <a href="animes/dr-stone.html" target="_self" rel="external">
-            <p class="card-name"><strong>DR. STONE</strong></p>
-            <img class="thumb" src="https://animefire.net/img/animes/dr-stone-large.webp?v=1" alt="Imagem" height="300">
+        <a class="card" href="animes/dr-stone.html" target="_self" rel="external">
+            <h3 class="card-name"><strong>DR. STONE</strong></h3>
+            <img src="https://animefire.net/img/animes/dr-stone-large.webp?v=1" alt="Imagem" height="300">
         </a>
     </div>
 </body>

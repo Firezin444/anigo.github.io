@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/icons/icon-48.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>NOME</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="../index.html" target="_self" rel="internal">
+            <h1 id="logo">AniGO!</h1>
+        </a>
+        <p>LANÇAMENTOS</p>
+        <p>GÊNERO</p>
+    </div>
+    <div>
+        <h1>NOME</h1>
+        <img class="thumb" src="URL_Thumbnail" alt="Imagem">
+        <p class="sinopse"><strong>Sinopse:</strong> Texto</p>
+    </div>
+    <h2>1ª TEMPORADA</h2>
+    <div class="video">
+        <p>E1 - Nome episódio</p>
+        <video src="URL_Video" type="video/mp4">Eita</video>
+    </div>
+    <script>
+        var videos = document.getElementsByTagName("video");
+        for (var i=0; i<= videos.length-1; i++) {
+            videos[i].controlsList = "nodownload";
+            videos[i].preload = "metadata";
+            videos[i].controls = "controls";
+            videos[i].poster = "URL_Poster";
+        }
+    </script>
+</body>
+</html>

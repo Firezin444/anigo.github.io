@@ -1,0 +1,126 @@
+/* RULES */
+@charset "UTF-8";
+@font-face {
+    font-family: 'Annyant';
+    src: url(../fonts/AnnyantRoman.ttf) format('truetype');
+}
+
+/* TAGS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+h1, h2 {
+    margin: 5px;
+    background-color: #202020;
+    color: white;
+    text-shadow: 2px 2px 3px #040404;
+}
+h3 {
+    padding: 10px;
+    color: white;
+    background-color: #202020;
+    text-shadow: 2px 2px 3px black;
+}
+p {
+    padding: 5px;
+    color: white;
+    background-color: #202020;
+    text-shadow: 1px 1px 1px black;
+}
+a {
+    text-decoration: none;
+}
+video {
+    width: 100%;
+}
+
+/* CLASSES */
+.inline {
+    display: inline;
+}
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.menu-bar {
+    text-align: left;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, #e50914, black 90%);
+}
+.logo {
+    width: 300px;
+    text-align: center;
+}
+.menu-options {
+    display: flex;
+}
+.card {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    background-color: #27476e;
+    display: inline-table;
+    background-image: linear-gradient(180deg, #e50914, black 90%);
+}
+.video {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    display: inline-table;
+    background-image: linear-gradient(180deg, #e50914, black 90%);
+}
+.card-name {
+    margin: 0;
+    text-decoration: none; 
+}
+.thumb {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+.sinopse {
+    margin: 5px;
+}
+.season {
+    display: flex;
+}
+
+/* IDs */
+#logo {
+    color: white;
+    background-color: transparent;
+    font-family: 'Annyant';
+    font-weight: 100;
+    text-shadow: 2px 2px 3px #040404;
+}
+#search-bar {
+    padding: 5px;
+    padding-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+    outline-style: none;
+    border-style: none;
+    color: white;
+    background-color: #202020;
+}
+#search-icon {
+    height: 2em;
+    background-color: #202020;
+}
