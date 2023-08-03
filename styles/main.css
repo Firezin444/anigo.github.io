@@ -4,12 +4,24 @@
     font-family: 'Planet';
     src: url(../fonts/Planet\ Comic.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Bruce';
+    src: url(../fonts/BruceForeverRegular-X3jd2.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Jabjai';
+    src: url(../fonts/jabjai_light.TTF) format('truetype');
+}
 
 :root {
     --cor-fundo: #181818;
     --cor1: #E00712;
     --cor2: #F40612;
+    --cor3: #2D2D2D;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-logo: 'Planet';
+    --fonte-nome: 'Bruce';
+    --fonte-titulo: 'Jabjai';
 }
 
 /* TAGS */
@@ -18,24 +30,54 @@
     padding: 0;
 }
 body{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--fonte-padrao);
     font-size: 16px;
     background-color: var(--cor-fundo);
     height: 100%;
     width: 100%;
 }
+header {
+    padding: 16px;
+    text-align: left;
+    background-color: black;
+}
+header > a {
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+}
+main {
+    padding: 16px;
+}
+main h1 {
+    font-family: var(--fonte-nome);
+    font-weight: bold;
+}
+main > p {
+    max-width: 600px;
+}
+section {
+    margin: 20px;
+}
+section.intro {
+    text-align: justify;
+    width: 90%;
+    min-width: 320px;
+    max-width: 600px;
+}
+section.cards > a {
+    margin: 5px;
+    text-align: center;
+    width: 200px;
+    display: inline-table;
+}
+section.cards > p {
+    font-weight: bolder;
+}
 h1, h2 {
     margin: 5px;
-    background-color: #202020;
     color: white;
     text-shadow: 2px 2px 3px #040404;
-}
-h3 {
-    padding: 10px;
-    color: white;
-    background-color: #202020;
-    text-shadow: 2px 2px 3px black;
 }
 p {
     padding: 5px;
@@ -62,26 +104,12 @@ footer {
     flex: 1;
     justify-content: flex-end;
 }
-.menu-bar {
-    text-align: left;
-    padding: 16px;
-    background-color: black;
-}
 .logo {
     width: 300px;
     text-align: center;
 }
 .menu-options {
     display: flex;
-}
-.card {
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    width: 200px;
-    background-color: #27476e;
-    display: inline-table;
 }
 .video {
     border-radius: 5px;
@@ -111,24 +139,21 @@ footer {
 }
 
 /* IDs */
-#logo {
+header a#logo {
     color: var(--cor1);
     font-family: var(--fonte-logo);
     font-size: 2em;
     font-weight: normal;
 }
-#search-bar {
-    padding: 5px;
-    padding-top: 0px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    text-shadow: 1px 1px 1px black;
-    outline-style: none;
-    border-style: none;
-    color: white;
-    background-color: #202020;
+header a#new-account {
+    background-color: var(--cor1);
 }
-#search-icon {
-    height: 2em;
-    background-color: #202020;
+header a#new-account:hover {
+    background-color: var(--cor2);
+}
+header a#login {
+    border: 1px solid white;
+}
+header a#login:hover {
+    background-color: var(--cor3);
 }
