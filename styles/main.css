@@ -5,10 +5,6 @@
     src: url(../fonts/Planet\ Comic.ttf) format('truetype');
 }
 @font-face {
-    font-family: 'Bruce';
-    src: url(../fonts/BruceForeverRegular-X3jd2.ttf) format('truetype');
-}
-@font-face {
     font-family: 'Jabjai';
     src: url(../fonts/jabjai_light.TTF) format('truetype');
 }
@@ -20,7 +16,6 @@
     --cor3: #2D2D2D;
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-logo: 'Planet';
-    --fonte-nome: 'Bruce';
     --fonte-titulo: 'Jabjai';
 }
 
