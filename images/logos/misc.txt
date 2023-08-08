@@ -1,7 +1,0 @@
-Paleta de cores
-
-040404 Black
-13505b Midnight Green
-0c7489 Cerulean
-119da4 Dark Cyan
-d7d9ce Timberwolf
