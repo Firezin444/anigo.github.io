@@ -46,11 +46,27 @@ header > a {
     padding: 10px;
     border-radius: 2px;
 }
-main {
-    padding: 16px;
+header form#pesquisar {
+    text-align: right;
+}
+form input#search {
+    height: 30px;
+    width: 80%;
+    min-width: 100px;
+    background-color: var(--cor3);
+    color: white;
+    border-style: none;
+    outline-style: none;
+    text-indent: 10px;
+}
+form button#bsearch {
+    color: white;
+    background-color: black;
+    border-style: none;
 }
 main h1 {
-    font-family: var(--fonte-nome);
+    font-variant: small-caps;
+    font-size: 1.8em;
     font-weight: bold;
 }
 main > p {
@@ -65,14 +81,22 @@ section.intro {
     min-width: 320px;
     max-width: 600px;
 }
+section.cards > p {
+    font-weight: bolder;
+}
 section.cards > a {
     margin: 5px;
     text-align: center;
     width: 200px;
     display: inline-table;
 }
-section.cards > p {
-    font-weight: bolder;
+section.cards > a:hover {
+    transform: scale(1.02);
+    transition: .3s;
+}
+section.cards img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 6px #00000060;
 }
 h1, h2 {
     margin: 5px;
@@ -144,6 +168,9 @@ header a#logo {
     font-family: var(--fonte-logo);
     font-size: 2em;
     font-weight: normal;
+}
+header a#logo:hover {
+    color: white;
 }
 header a#new-account {
     background-color: var(--cor1);
