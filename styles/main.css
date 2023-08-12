@@ -18,6 +18,9 @@
     --fonte-logo: 'Planet';
     --fonte-titulo: 'Jabjai';
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* TAGS */
 * {
@@ -28,11 +31,9 @@ body{
     font-family: var(--fonte-padrao);
     font-size: 16px;
     background-color: var(--cor-fundo);
-    height: 100%;
-    width: 100%;
 }
 header {
-    padding: 16px;
+    padding: 5px;
     text-align: left;
     background-color: black;
 }
@@ -41,40 +42,69 @@ header > a {
     padding: 10px;
     border-radius: 2px;
 }
+/* IDs */
+header a#logo {
+    color: var(--cor1);
+    font-family: var(--fonte-logo);
+    font-size: 2em;
+    font-weight: normal;
+}
+header a#logo:hover {
+    color: white;
+}
+header a#new-account {
+    background-color: var(--cor1);
+}
+header a#new-account:hover {
+    background-color: var(--cor2);
+}
+header a#login {
+    border: 1px solid white;
+}
+header a#login:hover {
+    background-color: var(--cor3);
+}
 header form#pesquisar {
-    text-align: right;
+    margin-top: 20px;
+    align-items: center;
 }
 form input#search {
     height: 30px;
-    width: 80%;
-    min-width: 100px;
     background-color: var(--cor3);
     color: white;
     border-style: none;
     outline-style: none;
     text-indent: 10px;
 }
-form button#bsearch {
+button#bsearch {
+    height: 30px;
+    position: absolute;
     color: white;
-    background-color: black;
+    background-color: var(--cor3);
     border-style: none;
+}
+button#bsearch img {
+    padding-left: 5px;
+    height: 30px;
+}
+button#bsearch img:hover {
+    transform: scale(1.03);
+    transition: .3s;
+}
+main {
+    padding: 5px;
+    text-align: center;
 }
 main h1 {
     font-variant: small-caps;
     font-size: 1.8em;
     font-weight: bold;
 }
-main > p {
-    max-width: 600px;
-}
 section {
-    margin: 20px;
+    margin: 5px;
 }
 section.intro {
     text-align: justify;
-    width: 90%;
-    min-width: 320px;
-    max-width: 600px;
 }
 section.cards > p {
     font-weight: bolder;
@@ -82,7 +112,6 @@ section.cards > p {
 section.cards > a {
     margin: 5px;
     text-align: center;
-    width: 200px;
     display: inline-table;
 }
 section.cards > a:hover {
@@ -92,6 +121,8 @@ section.cards > a:hover {
 section.cards img {
     border-radius: 10px;
     box-shadow: 0px 0px 6px 6px #00000060;
+    width: 25vw;
+    min-width: 100px;
 }
 h1, h2 {
     margin: 5px;
@@ -145,37 +176,14 @@ footer {
     text-decoration: none; 
 }
 .thumb {
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
+    display: inline;
+    width: 30vw;
+    min-width: 100px;
+    max-width: 220px;
+    margin: 10px;
     border-radius: 5px;
 }
 .sinopse {
-    margin: 5px;
-}
-.season {
-    display: flex;
-}
-
-/* IDs */
-header a#logo {
-    color: var(--cor1);
-    font-family: var(--fonte-logo);
-    font-size: 2em;
-    font-weight: normal;
-}
-header a#logo:hover {
-    color: white;
-}
-header a#new-account {
-    background-color: var(--cor1);
-}
-header a#new-account:hover {
-    background-color: var(--cor2);
-}
-header a#login {
-    border: 1px solid white;
-}
-header a#login:hover {
-    background-color: var(--cor3);
+    margin: 10px;
+    text-align: justify;
 }
