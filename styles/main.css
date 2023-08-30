@@ -1,189 +1,47 @@
-/* RULES */
 @charset "UTF-8";
-@font-face {
-    font-family: 'Planet';
-    src: url(../fonts/Planet\ Comic.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Jabjai';
-    src: url(../fonts/jabjai_light.TTF) format('truetype');
-}
 
+/* Mobile First */
 :root {
-    --cor-fundo: #181818;
-    --cor1: #E00712;
-    --cor2: #F40612;
-    --cor3: #2D2D2D;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-logo: 'Planet';
-    --fonte-titulo: 'Jabjai';
-}
-::-webkit-scrollbar {
-    display: none;
+    --background: black;
+    --header: #202020;
+    --logo: red;
 }
 
-/* TAGS */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 4, 'opsz' 40;
+    font-size: 40px;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: var(--fonte-padrao);
-    font-size: 16px;
-    background-color: var(--cor-fundo);
-}
-header {
-    padding: 5px;
-    text-align: left;
-    background-color: black;
-}
-header > a {
-    color: white;
-    padding: 10px;
-    border-radius: 2px;
-}
-/* IDs */
-header a#logo {
-    color: var(--cor1);
-    font-family: var(--fonte-logo);
-    font-size: 2em;
-    font-weight: normal;
-}
-header a#logo:hover {
-    color: white;
-}
-header a#new-account {
-    background-color: var(--cor1);
-}
-header a#new-account:hover {
-    background-color: var(--cor2);
-}
-header a#login {
-    border: 1px solid white;
-}
-header a#login:hover {
-    background-color: var(--cor3);
-}
-header form#pesquisar {
-    margin-top: 20px;
-    align-items: center;
-}
-form input#search {
-    height: 30px;
-    background-color: var(--cor3);
-    color: white;
-    border-style: none;
-    outline-style: none;
-    text-indent: 10px;
-}
-button#bsearch {
-    height: 30px;
-    position: absolute;
-    color: white;
-    background-color: var(--cor3);
-    border-style: none;
-}
-button#bsearch img {
-    padding-left: 5px;
-    height: 30px;
-}
-button#bsearch img:hover {
-    transform: scale(1.03);
-    transition: .3s;
-}
-main {
-    padding: 5px;
-    text-align: center;
-}
-main h1 {
-    font-variant: small-caps;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-section {
-    margin: 5px;
-}
-section.intro {
-    text-align: justify;
-}
-section.cards > p {
-    font-weight: bolder;
-}
-section.cards > a {
-    margin: 5px;
-    text-align: center;
-    display: inline-table;
-}
-section.cards > a:hover {
-    transform: scale(1.02);
-    transition: .3s;
-}
-section.cards img {
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 6px #00000060;
-    width: 25vw;
-    min-width: 100px;
-}
-h1, h2 {
-    margin: 5px;
-    color: white;
-    text-shadow: 2px 2px 3px #040404;
-}
-p {
-    padding: 5px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-}
-a {
-    text-decoration: none;
-}
-video {
-    width: 100%;
-}
-footer {
-    text-align: center;
-    background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
-/* CLASSES */
-.inline {
+html, body {
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    background-color: var(--header);
+}
+
+header > menu {
     display: inline;
 }
-.right {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-.logo {
-    width: 300px;
-    text-align: center;
-}
-.menu-options {
-    display: flex;
-}
-.video {
-    border-radius: 5px;
-    margin-top: 5px;
-    padding: 5px;
-    text-align: center;
-    width: 90%;
-    max-width: 500px;
-    display: inline-table;
-    background-image: linear-gradient(180deg, #e50914, black 90%);
-}
-.card-name {
-    margin: 0;
-    text-decoration: none; 
-}
-.thumb {
+
+header > menu > span {
     display: inline;
-    width: 30vw;
-    min-width: 100px;
-    max-width: 220px;
-    margin: 10px;
-    border-radius: 5px;
 }
-.sinopse {
-    margin: 10px;
-    text-align: justify;
+
+header > logo {
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--logo);
+}
+
+main {
+
 }

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (orientation: portrait) {}
+
+@media screen and (orientation: landscape) {}
+
+@media screen and (max-width: 468px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 780px) and (max-width: 990px) {
+    
+}
+
+/* PCs, TVs e telas grandes */
+@media screen and (min-width: 990px) {
+    
+}
